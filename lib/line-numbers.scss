@@ -1,0 +1,52 @@
+pre {
+	&[class*="language-"] {
+		&.line-numbers {
+			position: relative;
+			padding-left: $padding-left;
+			counter-reset: linenumber;
+
+			> code {
+				position: relative;
+				white-space: inherit;
+			}
+		}
+	}
+}
+
+.line-numbers {
+	.line-numbers-rows {
+		user-select: none;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: $font-size;
+		letter-spacing: $letter-spacing;
+		border-right: $border-bottom $comment;
+	}
+}
+
+.line-numbers-rows {
+	> span {
+		pointer-events: none;
+		display: block;
+		counter-increment: linenumber;
+
+		&:before {
+			content: counter(linenumber);
+			display: block;
+			min-width: $min-width;
+			color: rgba($foreground, $opacity);
+			text-align: $text-align;
+			line-height: $line-height;
+			border-bottom: $border-bottom $comment;
+		}
+
+		&:last-child {
+			&:before {
+				margin-bottom: $margin-bottom;
+				border-bottom: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+  "name": "gatsby-line-numbers-dracula",
+  "version": "0.1.1",
+  "description": "Dracula line numbers theme for Gatsby",
+  "main": "styles.css",
+  "scripts": {
+    "sass": "node_modules/node-sass/bin/node-sass lib/styles.scss styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamskok/gatsby-line-numbers-dracula.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-remark-prismjs",
+    "prism",
+    "prism-line-numbers",
+    "prism-line-highlight",
+    "theme",
+    "dark-theme",
+    "dracula",
+    "dracula-theme",
+    "gatsby-line-hightlights-dracula",
+    "gatsby-syntax-highlights-dracula",
+    "gatsby-code-buttons-dracula",
+    "gatsby-code-titles-dracula",
+    "styles",
+    "sass",
+    "scss",
+    "css"
+  ],
+  "author": "Vladimir Skok <skok@vova.io> (https://github.com/iamskok)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamskok/gatsby-line-numbers-dracula/issues"
+  },
+  "homepage": "https://github.com/iamskok/gatsby-line-numbers-dracula#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
